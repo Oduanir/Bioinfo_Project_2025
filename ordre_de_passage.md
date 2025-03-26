@@ -18,3 +18,7 @@
 - HAYAKAWA IVANOVIC Maxime 
 - KATAR Arij
 - KONE Fatimata
+
+# 15h30-16h
+- AREZQI Ayman
+- JEMLI Zeineb
