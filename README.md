@@ -350,6 +350,6 @@ As for the elastic-net, remember to:
 At this step, you should have different lists of candidate biomarkers. 
 Propose a final ranked list, making use of all your results, containing the TOP "100" candidates.
 This list will be compared to the state of art of ALS biomarkers but also other related diseases.
-The state of art lists will be avalaible in this repository after the 4 may. 
+The state of art lists will be avalaible in this repository after the 10 April. 
 
 Good luck !
