@@ -1,0 +1,2273 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Oliver</First><Middle>H</Middle><Last>Tam</Last></Person>
+    <Laboratory>Molly Gale Hammell lab</Laboratory>
+    <Department>Genomics</Department>
+    <Organization>Cold Spring Harbor Laboratory</Organization>
+    <Address>
+      <Line>1 Bungtown Road</Line>
+      <City>Cold Spring Harbor</City>
+      <State>New York</State>
+      <Zip-Code>11724</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Nikolay</First><Middle>V</Middle><Last>Rozhkov</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Regina</First><Last>Shaw</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>John</First><Last>Ravits</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Josh</First><Last>Dubnau</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib7">
+    <Person><First>Molly</First><Last>Gale Hammell</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL18573">
+    <Status database="GEO">
+      <Submission-Date>2014-04-15</Submission-Date>
+      <Release-Date>2014-04-15</Release-Date>
+      <Last-Update-Date>2019-03-26</Last-Update-Date>
+    </Status>
+    <Title>Illumina NextSeq 500 (Homo sapiens)</Title>
+    <Accession database="GEO">GPL18573</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="9606">Homo sapiens</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM3477217">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>sALS patient JR9 replicate 1</Title>
+    <Accession database="GEO">GSM3477217</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>sALS Motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR9
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+sALS
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS-21
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477217/suppl/GSM3477217_ALS-21_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438147" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021612" />
+  </Sample>
+
+  <Sample iid="GSM3477218">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>sALS patient JR9 replicate 2</Title>
+    <Accession database="GEO">GSM3477218</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>sALS Motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR9
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+sALS
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS-22
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477218/suppl/GSM3477218_ALS-22_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438146" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021613" />
+  </Sample>
+
+  <Sample iid="GSM3477219">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>sALS patient JR48 replicate 1</Title>
+    <Accession database="GEO">GSM3477219</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>sALS Motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR48
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+sALS
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS-23
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477219/suppl/GSM3477219_ALS-23_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438145" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021614" />
+  </Sample>
+
+  <Sample iid="GSM3477220">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>sALS patient JR48 replicate 2</Title>
+    <Accession database="GEO">GSM3477220</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>sALS Motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR48
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+sALS
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS-24
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477220/suppl/GSM3477220_ALS-24_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438144" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021615" />
+  </Sample>
+
+  <Sample iid="GSM3477221">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>sALS patient JR29 replicate 1</Title>
+    <Accession database="GEO">GSM3477221</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>sALS Motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR29
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+sALS
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS-27
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477221/suppl/GSM3477221_ALS-27_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438143" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021616" />
+  </Sample>
+
+  <Sample iid="GSM3477222">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>sALS patient JR29 replicate 2</Title>
+    <Accession database="GEO">GSM3477222</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>sALS Motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR29
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+sALS
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS-28
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477222/suppl/GSM3477222_ALS-28_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438142" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021617" />
+  </Sample>
+
+  <Sample iid="GSM3477223">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>sALS patient JR30 replicate 1</Title>
+    <Accession database="GEO">GSM3477223</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>sALS/FTD Motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR30
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+sALS/FTD
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS-29
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477223/suppl/GSM3477223_ALS-29_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438141" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021618" />
+  </Sample>
+
+  <Sample iid="GSM3477224">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>sALS patient JR30 replicate 2</Title>
+    <Accession database="GEO">GSM3477224</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>sALS/FTD Motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR30
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+sALS/FTD
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS-30
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477224/suppl/GSM3477224_ALS-30_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438140" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021619" />
+  </Sample>
+
+  <Sample iid="GSM3477225">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>sALS patient JR33 replicate 1</Title>
+    <Accession database="GEO">GSM3477225</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>sALS Motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR33
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+sALS
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS-31
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477225/suppl/GSM3477225_ALS-31_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438139" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021620" />
+  </Sample>
+
+  <Sample iid="GSM3477226">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>sALS patient JR33 replicate 2</Title>
+    <Accession database="GEO">GSM3477226</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>sALS Motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR33
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+sALS
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS-32
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477226/suppl/GSM3477226_ALS-32_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438138" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021621" />
+  </Sample>
+
+  <Sample iid="GSM3477227">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>sALS patient JR35 replicate 1</Title>
+    <Accession database="GEO">GSM3477227</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>sALS Motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR35
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+sALS
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS-35
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477227/suppl/GSM3477227_ALS-35_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438137" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021622" />
+  </Sample>
+
+  <Sample iid="GSM3477228">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>sALS patient JR35 replicate 2</Title>
+    <Accession database="GEO">GSM3477228</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>sALS Motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR35
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+sALS
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS-36
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477228/suppl/GSM3477228_ALS-36_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438136" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021623" />
+  </Sample>
+
+  <Sample iid="GSM3477229">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>sALS patient JR36 replicate 1</Title>
+    <Accession database="GEO">GSM3477229</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>sALS Motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR36
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+sALS
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS-37
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477229/suppl/GSM3477229_ALS-37_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438182" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021624" />
+  </Sample>
+
+  <Sample iid="GSM3477230">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>sALS patient JR36 replicate 2</Title>
+    <Accession database="GEO">GSM3477230</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>sALS Motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR36
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+sALS
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS-38
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477230/suppl/GSM3477230_ALS-38_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438181" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021625" />
+  </Sample>
+
+  <Sample iid="GSM3477231">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>sALS patient JR47 replicate 1</Title>
+    <Accession database="GEO">GSM3477231</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>sALS/FTD Motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR47
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+sALS/FTD
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS-39
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477231/suppl/GSM3477231_ALS-39_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438180" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021626" />
+  </Sample>
+
+  <Sample iid="GSM3477232">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>sALS patient JR47 replicate 2</Title>
+    <Accession database="GEO">GSM3477232</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>sALS/FTD Motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR47
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+sALS/FTD
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS-40
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477232/suppl/GSM3477232_ALS-40_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438179" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021627" />
+  </Sample>
+
+  <Sample iid="GSM3477233">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>sALS patient JR60 replicate 1</Title>
+    <Accession database="GEO">GSM3477233</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>sALS Motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR60
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+sALS
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS-41
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477233/suppl/GSM3477233_ALS-41_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438178" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021628" />
+  </Sample>
+
+  <Sample iid="GSM3477234">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>sALS patient JR60 replicate 2</Title>
+    <Accession database="GEO">GSM3477234</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>sALS Motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR60
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+sALS
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS-42
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477234/suppl/GSM3477234_ALS-42_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438177" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021629" />
+  </Sample>
+
+  <Sample iid="GSM3477235">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>sALS patient JR34 replicate 1</Title>
+    <Accession database="GEO">GSM3477235</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>sALS Motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR34
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+sALS
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS-43
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477235/suppl/GSM3477235_ALS-43_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438176" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021630" />
+  </Sample>
+
+  <Sample iid="GSM3477236">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>sALS patient JR34 replicate 2</Title>
+    <Accession database="GEO">GSM3477236</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>sALS Motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR34
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+sALS
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS-44
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477236/suppl/GSM3477236_ALS-44_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438175" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021631" />
+  </Sample>
+
+  <Sample iid="GSM3477237">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>sALS patient JR61 replicate 1</Title>
+    <Accession database="GEO">GSM3477237</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>sALS Motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR61
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+sALS
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS-45
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477237/suppl/GSM3477237_ALS-45_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438174" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021632" />
+  </Sample>
+
+  <Sample iid="GSM3477238">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>sALS patient JR61 replicate 2</Title>
+    <Accession database="GEO">GSM3477238</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>sALS Motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR61
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+sALS
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS-46
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477238/suppl/GSM3477238_ALS-46_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438173" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021633" />
+  </Sample>
+
+  <Sample iid="GSM3477239">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>sALS patient JR18 replicate 1</Title>
+    <Accession database="GEO">GSM3477239</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>sALS Motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR18
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+sALS
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS-47
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477239/suppl/GSM3477239_ALS-47_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438172" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021634" />
+  </Sample>
+
+  <Sample iid="GSM3477240">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>sALS patient JR18 replicate 2</Title>
+    <Accession database="GEO">GSM3477240</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>sALS Motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR18
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+sALS
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS-48
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477240/suppl/GSM3477240_ALS-48_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438171" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021635" />
+  </Sample>
+
+  <Sample iid="GSM3477241">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>sALS patient JR27 replicate 1</Title>
+    <Accession database="GEO">GSM3477241</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>sALS Motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR27
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+sALS
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS-75
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477241/suppl/GSM3477241_ALS-75_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438170" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021636" />
+  </Sample>
+
+  <Sample iid="GSM3477242">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>sALS patient JR27 replicate 2</Title>
+    <Accession database="GEO">GSM3477242</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>sALS Motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR27
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+sALS
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS-76
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477242/suppl/GSM3477242_ALS-76_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438169" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021637" />
+  </Sample>
+
+  <Sample iid="GSM3477243">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>control individual JR39 replicate 1</Title>
+    <Accession database="GEO">GSM3477243</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Control motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR39
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+Non-neurological control
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Co-1
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477243/suppl/GSM3477243_Co-1_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438168" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021638" />
+  </Sample>
+
+  <Sample iid="GSM3477244">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>control individual JR39 replicate 2</Title>
+    <Accession database="GEO">GSM3477244</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Control motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR39
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+Non-neurological control
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Co-2
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477244/suppl/GSM3477244_Co-2_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438167" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021639" />
+  </Sample>
+
+  <Sample iid="GSM3477245">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>control individual JR44 replicate 1</Title>
+    <Accession database="GEO">GSM3477245</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Control motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR44
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+Non-neurological control
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Co-3
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477245/suppl/GSM3477245_Co-3_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438166" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021640" />
+  </Sample>
+
+  <Sample iid="GSM3477246">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>control individual JR44 replicate 2</Title>
+    <Accession database="GEO">GSM3477246</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Control motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR44
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+Non-neurological control
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Co-4
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477246/suppl/GSM3477246_Co-4_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438164" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021641" />
+  </Sample>
+
+  <Sample iid="GSM3477247">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>control individual JR67 replicate 1</Title>
+    <Accession database="GEO">GSM3477247</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Control motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR67
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+Non-neurological control
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Co-5
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477247/suppl/GSM3477247_Co-5_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438163" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021642" />
+  </Sample>
+
+  <Sample iid="GSM3477248">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>control individual JR67 replicate 2</Title>
+    <Accession database="GEO">GSM3477248</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Control motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR67
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+Non-neurological control
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Co-6
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477248/suppl/GSM3477248_Co-6_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438162" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021643" />
+  </Sample>
+
+  <Sample iid="GSM3477249">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>control individual JR65 replicate 1</Title>
+    <Accession database="GEO">GSM3477249</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Control motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR65
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+Non-neurological control
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Co-7
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477249/suppl/GSM3477249_Co-7_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438161" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021644" />
+  </Sample>
+
+  <Sample iid="GSM3477250">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>control individual JR65 replicate 2</Title>
+    <Accession database="GEO">GSM3477250</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Control motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR65
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+Non-neurological control
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Co-8
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477250/suppl/GSM3477250_Co-8_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438160" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021645" />
+  </Sample>
+
+  <Sample iid="GSM3477251">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>control individual JR70 replicate 1</Title>
+    <Accession database="GEO">GSM3477251</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Control motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR70
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+Non-neurological control
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Co-20
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477251/suppl/GSM3477251_Co-20_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438159" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021646" />
+  </Sample>
+
+  <Sample iid="GSM3477252">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>control individual JR70 replicate 2</Title>
+    <Accession database="GEO">GSM3477252</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Control motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR70
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+Non-neurological control
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Co-21
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477252/suppl/GSM3477252_Co-21_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438158" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021647" />
+  </Sample>
+
+  <Sample iid="GSM3477253">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>control individual JR73 replicate 1</Title>
+    <Accession database="GEO">GSM3477253</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Control motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR73
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+Non-neurological control
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Co-22
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477253/suppl/GSM3477253_Co-22_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438157" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021648" />
+  </Sample>
+
+  <Sample iid="GSM3477254">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-09-22</Last-Update-Date>
+    </Status>
+    <Title>control individual JR73 replicate 2</Title>
+    <Accession database="GEO">GSM3477254</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Control motor cortex</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+motor cortex
+      </Characteristics>
+      <Characteristics tag="subject id">
+JR73
+      </Characteristics>
+      <Characteristics tag="diagnosis">
+Non-neurological control
+      </Characteristics>
+      <Treatment-Protocol>
+Flash frozen autopsy tissue
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from each of the flash-frozen patient samples using the Ambion PureLink RNA Mini kit. RNA was assessed using the Bioanalyzer to ensure RNA Integrity (RIN) values of &gt; 5.5.
+RNA-seq libraries were prepared from 500 ng of total RNA using the Illumina Tru-seq Stranded RNA kit.  Samples were barcoded to multiplex 8 samples per batch, randomly mixing ALS and Control samples in each library preparation and sequencing batch.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Co-23
+    </Description>
+    <Data-Processing>
+Base calling performed with bcl2fastq conversion software v2.17
+Reads were aligned to hg19 genome using STAR v2.5.2b with the following configurations: --outFilterMultimapNmax 100; --outFilterMismatchNoverReadLmax 0.04
+Genes and TE were quantified using TEcount (from TEtranscripts v2.0.3) with the following configurations: hg19 genic GTF from refGene (Jan 2018), custom hg19 TE GTF generated from repeatMasker; --stranded reverse
+Genome_build: hg19
+Supplementary_files_format_and_content: Individual count tables were generated as output from TEcount
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3477nnn/GSM3477254/suppl/GSM3477254_Co-23_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10438156" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5021649" />
+  </Sample>
+
+  <Series iid="GSE122649">
+    <Status database="GEO">
+      <Submission-Date>2018-11-16</Submission-Date>
+      <Release-Date>2019-09-20</Release-Date>
+      <Last-Update-Date>2019-10-31</Last-Update-Date>
+    </Status>
+    <Title>Postmortem Cortex Samples Identify Distinct Molecular Subtypes of ALS: Retrotransposon Activation, Oxidative Stress, and Activated Glia [motor cortex]</Title>
+    <Accession database="GEO">GSE122649</Accession>
+    <Pubmed-ID>31665631</Pubmed-ID>
+    <Summary>
+Amyotrophic Lateral Sclerosis (ALS) is a fatal neurodegenerative disease characterized by the progressive loss of motor neurons. While several inherited pathogenic mutations have been identified as causative, the vast majority of cases are sporadic with no family history of disease. Thus, for the majority of ALS cases, a specific causal abnormality is not known and the disease may be a product of multiple inter-related pathways contributing to varying degrees in different ALS patients. Using unsupervised machine learning algorithms, we stratified the transcriptomes of 148 ALS decedent cortex tissue samples into three distinct and robust molecular subtypes. The largest cluster, identified in 61% of patient samples, displayed hallmarks of oxidative and proteotoxic stress. Another 20% of the ALS patient samples exhibited high levels of retrotransposon expression and other signatures of TDP-43 dysfunction. Finally, a third group showed predominant signatures of glial activation (19%). Together these results demonstrate that at least three distinct molecular signatures contribute to ALS disease. While multiple dysregulated components and pathways comprising these clusters have previously been implicated in ALS pathogenesis, unbiased analysis of this large survey demonstrated that sporadic ALS patient tissues can be segregated into distinct molecular subsets.
+    </Summary>
+    <Overall-Design>
+RNA-seq analysis of sporadic ALS patient samples against those from individuals without neurological disorders
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib1" position="3" />
+    <Contributor-Ref ref="contrib5" position="4" />
+    <Contributor-Ref ref="contrib6" position="5" />
+    <Contributor-Ref ref="contrib7" position="6" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM3477217" />
+    <Sample-Ref ref="GSM3477218" />
+    <Sample-Ref ref="GSM3477219" />
+    <Sample-Ref ref="GSM3477220" />
+    <Sample-Ref ref="GSM3477221" />
+    <Sample-Ref ref="GSM3477222" />
+    <Sample-Ref ref="GSM3477223" />
+    <Sample-Ref ref="GSM3477224" />
+    <Sample-Ref ref="GSM3477225" />
+    <Sample-Ref ref="GSM3477226" />
+    <Sample-Ref ref="GSM3477227" />
+    <Sample-Ref ref="GSM3477228" />
+    <Sample-Ref ref="GSM3477229" />
+    <Sample-Ref ref="GSM3477230" />
+    <Sample-Ref ref="GSM3477231" />
+    <Sample-Ref ref="GSM3477232" />
+    <Sample-Ref ref="GSM3477233" />
+    <Sample-Ref ref="GSM3477234" />
+    <Sample-Ref ref="GSM3477235" />
+    <Sample-Ref ref="GSM3477236" />
+    <Sample-Ref ref="GSM3477237" />
+    <Sample-Ref ref="GSM3477238" />
+    <Sample-Ref ref="GSM3477239" />
+    <Sample-Ref ref="GSM3477240" />
+    <Sample-Ref ref="GSM3477241" />
+    <Sample-Ref ref="GSM3477242" />
+    <Sample-Ref ref="GSM3477243" />
+    <Sample-Ref ref="GSM3477244" />
+    <Sample-Ref ref="GSM3477245" />
+    <Sample-Ref ref="GSM3477246" />
+    <Sample-Ref ref="GSM3477247" />
+    <Sample-Ref ref="GSM3477248" />
+    <Sample-Ref ref="GSM3477249" />
+    <Sample-Ref ref="GSM3477250" />
+    <Sample-Ref ref="GSM3477251" />
+    <Sample-Ref ref="GSM3477252" />
+    <Sample-Ref ref="GSM3477253" />
+    <Sample-Ref ref="GSM3477254" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE122nnn/GSE122649/suppl/GSE122649_RAW.tar
+    </Supplementary-Data>
+    <Relation type="SubSeries of" target="GSE122650" />
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA505842" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRP169128" />
+  </Series>
+
+</MINiML>
